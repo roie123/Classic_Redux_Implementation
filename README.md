@@ -1,7 +1,5 @@
 # Redux Toolkit Example Repository
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 📦 This repository demonstrates a by-the-book implementation of Redux Toolkit, a powerful library for managing state in JavaScript applications.
 
 ## Table of Contents
