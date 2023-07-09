@@ -10,7 +10,6 @@ function App() {
   const personState = useAppSelector(state => state.person);
   const dispatch = useAppDispatch();
 
-console.log('red');
 
     function handleChangeName() {
         console.log('handleChangeName called');
