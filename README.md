@@ -26,7 +26,7 @@
 
 🚀 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `[git clone https://github.com/roie123/Classic_Redux_Implementation`
 2. Change to the project directory: `cd your-repo`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
