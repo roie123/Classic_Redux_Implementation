@@ -1,25 +1,38 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {useAppDispatch, useAppSelector} from "./Redux-files/ReduxHooks";
+import {Provider, useDispatch} from "react-redux";
+import {changeAge, changeName, personSlice} from "./Redux-files/PersonSlice";
+
 
 function App() {
+  const personState = useAppSelector(state => state.person);
+  const dispatch = useAppDispatch();
+
+console.log('red');
+
+    function handleChangeName() {
+        console.log('handleChangeName called');
+        dispatch(personSlice.actions.changeName((Math.random() + 1).toString(36).substring(7)));
+    }
+
+    function handleChangeAge() {
+        console.log('handleChangeAge called');
+        dispatch(changeAge(personState.age * Math.random()));
+    }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+        <>
+          <div className="person-cont">
+            <p>name:{personState.name} , Age : {personState.age}</p>
+              <button onClick={()=> dispatch(changeName('aslkdn'))}>Change Name</button>
+              <button onClick={handleChangeAge}>Change Age</button>
+          </div>
+        </>
+
+
+
   );
 }
 
