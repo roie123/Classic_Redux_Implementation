@@ -26,7 +26,7 @@ console.log('red');
         <>
           <div className="person-cont">
             <p>name:{personState.name} , Age : {personState.age}</p>
-              <button onClick={()=> dispatch(changeName('aslkdn'))}>Change Name</button>
+              <button onClick={(handleChangeName)}>Change Name</button>
               <button onClick={handleChangeAge}>Change Age</button>
           </div>
         </>
