@@ -1,6 +1,5 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
 import {personSlice} from "./PersonSlice";
-import {myMiddleware} from "./MyMiddleware";
 // ...
 
 const rootReducer = combineReducers({ person:personSlice.reducer })
