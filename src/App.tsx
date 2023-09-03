@@ -1,9 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {useAppDispatch, useAppSelector} from "./Redux-files/ReduxHooks";
-import {Provider, useDispatch} from "react-redux";
-import {changeAge, changeName, personSlice} from "./Redux-files/PersonSlice";
+import {changeAge, personSlice} from "./Redux-files/PersonSlice";
 
 
 function App() {
